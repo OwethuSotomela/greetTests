@@ -1,0 +1,70 @@
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    align-items: center;
+}
+section{
+    height: 60vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+section{
+    background-image:url(./12.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+button{
+    display: inline;
+    font-size: 15px;
+    
+
+}
+.label-body{
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.out{
+    border: black 3px solid;
+    border-radius: 10px;
+}
+.fname{
+    width: 800px;
+}
+.front{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.error{
+    display: flex;
+    flex-direction: row;
+}
+.countOne{
+    padding-left: 10px;
+}
+.error{
+    color: red;
+    font-weight: 500;
+    margin-bottom: 3%;
+    
+}
+
+.error1{
+    color: green;
+    font-weight: 500;
+    margin-bottom: 3%;
+    
+}
+@media only screen and (min-width: 60em) { /* 960px */
+    .container {
+      width: 75%;
+      max-width: 61rem;
+    }
+}
