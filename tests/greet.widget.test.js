@@ -90,5 +90,39 @@ describe('Greeting', function() {
         myHello.setName(string10)
 
         assert.deepEqual(11, myHello.greetCounter())
-    })      
+    })  
+    
+    it('Should return the first character of the name greeted in isiZulu in UPPERCASE and the rest in lowercase ', function() {
+        let myHello = Greeting([])
+        var string = "worthy"
+
+
+        myHello.setName(string)
+        myHello.greetMessage("isiZulu", "LUSANDA")
+
+        assert.deepEqual("Sawubona, Lusanda", myHello.getGreet())
+    })   
+
+    it('Should return the first character of the name greeted in English in UPPERCASE and the rest in lowercase', function() {
+        let myHello = Greeting([])
+        var string = "worthy"
+
+
+        myHello.setName(string)
+        myHello.greetMessage("English", "OHwoRTHY")
+
+        assert.deepEqual("Hi, Ohworthy", myHello.getGreet())
+    })   
+
+    it('Should return the first character of the name greeted in Portuguese in UPPERCASE and the rest in lowercase', function() {
+        let myHello = Greeting([])
+        var string = "worthy"
+
+
+        myHello.setName(string)
+        myHello.greetMessage("Portuguese", "wORTHY")
+
+        assert.deepEqual("Oi, Worthy", myHello.getGreet())
+    })   
+         
 })
